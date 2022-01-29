@@ -1,5 +1,3 @@
-![Pyber_cover](https://user-images.githubusercontent.com/22451540/151674464-50d4a859-cbbb-41f0-8bb9-a6817f332449.PNG)
-
 # PyBer Analysis
 
 ## Overview of the analysis
