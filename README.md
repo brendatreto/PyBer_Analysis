@@ -2,7 +2,7 @@
 
 ## Overview of the analysis
 ### Purpose
-A well-known company assigned us the task of analyzing the trends in their ride-sharing app. They work all over the country, but have been seeing different results in the different areas they work. Throughout the week, we analyzed the data, cleansed it and provided some very useful graphs to study the distribution and the relationship between type of city, drivers and fares. However, the company has requested a deeper analysis, in order to understand how time has an effect in the users behavior.
+A well-known company assigned us the task of analyzing the trends in their ride-sharing app. They work all over the country but have been seeing different results in the different areas they work. Throughout the week, we analyzed the data, cleansed it, and provided some very useful graphs to study the distribution and the relationship between type of city, drivers, and fares. However, the company has requested a deeper analysis, to understand how time has an effect in the user's behavior.
 With the data provided by PyBer we will create a multiple-line graph to show weekly fares for each city type.
 
 ### Resources
@@ -22,7 +22,7 @@ The process we followed to get this information was using the **groupby()** func
 
 *Fig 1. Using the groupby() function.*
 
-Once we had this information we continued by retrieving the averages fares per ride and per driver for each city type. For this process we simply divided the total fares by the total rides or total drivers information that was analyzed earlier.
+Once we had this information, we continued by retrieving the averages fares per ride and per driver for each city type. For this process we simply divided the total fares by the total rides or total drivers' information that was analyzed earlier.
 
 The following summary showcases how the rides, fares and drivers is distributed along the different city types.
 
@@ -30,7 +30,7 @@ The following summary showcases how the rides, fares and drivers is distributed 
 
 *Fig 2. PyBer Summary DataFrame*
 
-From this, we can see how th urban cities hold the majority of the rides (1,625), drivers (2,405) and fares ($39,854.38). However they have the lowest averages fares per ride ($24.53) and per rider ($16.57). This means that the user pays less for the service, but the drivers get less money for their work. Rural cities, on the other hand have a total of 125 rides and only 78 drivers; this means that they have less fares (compared to urban cities) but each ride has a higher average fare ($34.62) and each driver gets a higher fare per drive ($55.49).
+From this, we can see how the urban cities hold most of the rides (1,625), drivers (2,405) and fares ($39,854.38). However, they have the lowest averages fares per ride ($24.53) and per rider ($16.57). This means that the user pays less for the service, but the drivers get less money for their work. Rural cities, on the other hand have a total of 125 rides and only 78 drivers; this means that they have less fares (compared to urban cities), but each ride has a higher average fare ($34.62) and each driver gets a higher fare per drive ($55.49).
 
 ### Weekly fares by city type
 
@@ -40,13 +40,13 @@ The next part of the analysis consisted in using that same merged data frame and
 
 *Fig 3. Using the groupby() function with multiple variables*
 
-Once we had this framing we reset the index and created a pivot table to display the rides using the dates as index.
+Once we had this framing, we reset the index and created a pivot table to display the rides using the dates as index.
 
 ![pivotrides](https://user-images.githubusercontent.com/22451540/151675362-d89b0e09-9dc7-4d90-aef4-c25b6ef54e6b.PNG)
 
 *Fig 4. Pivot table with date as index*
 
-In order to get a proper visualization of rides along the different dates, we converted the date index to datetime datatype, and later resample the information by week, to get the sum of fares by week.
+To get a proper visualization of rides along the different dates, we converted the date index to datetime datatype, and later resample the information by week, to get the sum of fares by week.
 
 ![weekly](https://user-images.githubusercontent.com/22451540/151675475-b124c711-8d0e-4a15-9b45-07f5e7c7e186.PNG)
 
